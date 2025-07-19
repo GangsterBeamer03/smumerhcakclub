@@ -1,0 +1,171 @@
+@font-face {
+	font-family: 'arialrounded';
+	src: url('https://highseas.hackclub.com/fonts/arialroundedmtbold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-family: 'arialrounded', sans-serif !important;
+	background-image: url("https://highseas.hackclub.com/bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100;
+	transition: all 0.3s;	
+}
+
+
+.bigtext {
+	font-size: 60px;
+	font-family: 'arialrounded', sans-serif !important;
+	width: 940px;
+	text-align: center;
+	background-repeat: repeat;
+	background-color: rgba(20, 7, 38, 0.753);
+	backdrop-filter: blur(1px);
+	margin: 0 auto;
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+form {
+	background-size: 50rem;
+	background-repeat: repeat;
+	background-color: rgba(20, 7, 38, 0.753);
+	backdrop-filter: blur(1px);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 900px;
+	margin-top: 20px;
+}
+
+.high-logo {
+	position: fixed;
+	top: 14px;
+	left: 16px;
+	z-index: 1000;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+	width: 98%;
+	font-family: 'arialrounded', sans-serif !important;
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 4px;
+	background:white;
+	border: 1px solid #ffffff;
+	font-size: 1rem;
+}
+
+button {
+	background-color: #D236E2;
+	color: white;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	width: 100.5%;
+
+	transition: 0.3s all;
+}
+
+select {
+	width: 100.5%;
+}
+
+button:hover {
+	background-color: #ce66da;
+}
+
+.log-box {
+	background-size: 50rem;
+	background-repeat: repeat;
+	background-color: rgba(20, 7, 38, 0.753);
+	backdrop-filter: blur(1px);
+	border-radius: 8px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	width: 100%;
+	max-width: 900px;
+	height: 150px;
+	overflow-y: auto;
+	font-size: 0.9rem;
+	color: #ffffff;
+}
+
+.log-title {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+/* Split Button Style */
+.split-button {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    transition: ease-in-out 0.5s all;    
+}
+
+.split-button button {
+    padding: 10px 20px;
+    background-color: #fff;
+	color:#000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    border: 2px solid transparent; /* Add a border to maintain size */
+}
+
+.split-button button.active {
+    background-color: #D236E2; /* Change background color for active button */
+    color: white; /* Change text color for active button */
+}
+
+.date-btn{
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 0%;
+}
+
+.time-btn{
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+}
+
+button:hover {
+    background-color: #D236E2; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+button.active:hover {
+    background-color: #D236E2; /* Keep active button color on hover */
+    color: white; /* Keep active button text color on hover */
+}
