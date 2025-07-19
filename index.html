@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Seas | Hack Club</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://highseas.hackclub.com/favicons/favicon.ico" type="image/x-icon" sizes="32x32">
+  </head>
+  <body>
+    <img src="https://highseas.hackclub.com/logo.png" height="47.5px" class="high-logo">
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <p class="bigtext">The Spoofer</p>
+    </div>
+    <!-- Initial Input Form -->
+    <form id="initialForm">
+      <div class="form-group">
+        <label for="apiKey">API Key:</label>
+        <input type="text" id="apiKey" required placeholder="Enter your API Key">
+      </div>
+      <div class="form-group">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" required placeholder="Enter the project name">
+      </div>
+      
+      <!-- Split Button for Time/Minutes Selection -->
+      <label for="projectName">Time or Date:</label>
+      <div class="split-button">
+        <button type="button" id="minutesBtn" class="time-btn">Time</button>
+        <button type="button" id="dateBtn" class="active date-btn">Date</button>
+      </div>
+
+      <div class="form-group time-form" id="timeForm">
+        <label for="startDate">Start Date & Time:</label>
+        <input type="datetime-local" id="startDate" required>
+      </div>
+      <div class="form-group time-form" id="endDateForm">
+        <label for="endDate">End Date & Time:</label>
+        <input type="datetime-local" id="endDate" required>
+      </div>
+      <div class="form-group">
+        <label for="totalDuration">Coding Duration (in minutes):</label>
+        <input type="number" id="totalDuration" required placeholder="Enter total duration">
+      </div>
+      <div class="form-group">
+        <label for="machine">Machine Used:</label>
+        <select id="machine">
+          <option value="Linux">Linux</option>
+          <option value="Windows">Windows</option>
+          <option value="macOS">macOS</option>
+          <option value="Unix">Unix</option>
+        </select>
+      </div>
+      <button type="button" id="nextBtn">Next</button>
+    </form>
+    
+    <!-- Dynamic File Input Form -->
+    <form id="fileForm" style="display: none;">
+      <div id="fileInputsContainer"></div>
+      <button type="button" id="addFileBtn">Add Next File</button>
+      <button type="submit">Generate Heartbeats</button>
+    </form>
+    <div class="log-box" id="logBox">
+      <div class="log-title">Activity Log</div>
+      <p id="logContent"></p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
